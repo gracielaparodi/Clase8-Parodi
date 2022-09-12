@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculadora IMC</title>
+    <style>
+        body {
+            font-family: Arial, Helvetica, sans-serif;
+            background-color: pink;
+            margin: 100px;
+        }
+
+        h1 {
+            text-align: center;
+        }
+
+        h2 {
+            text-align: center;
+        }
+
+        p {
+            text-align: center;
+        }
+
+        img {
+            display: block;
+            margin: 0px auto;
+        }
+
+        #input-fields {
+            text-align: center;
+        }
+
+        #container {
+            text-align: justify;
+            margin-left: 650px;
+            text-decoration: none;
+        }
+    </style>
+
+</head>
+
+<body>
+    <h1 id="titulo">Calculadora IMC</h1>
+
+    <p id="texto">El Índice de Masa Corporal (IMC) es una medida de asociación entre el peso y la talla de una persona.
+        El IMC es
+        usado como uno de varios indicadores para evaluar el estado nutricional.<br>
+
+        El IMC constituye la medida poblacional más útil del sobrepeso y la obesidad, pues la forma de calcularlo no
+        varía en función del sexo ni de la edad en la población adulta. No obstante, debe considerarse como una guía
+        aproximativa, pues puede no corresponder al mismo grado de gordura en diferentes individuos.<br>
+
+        La Organización Mundial de la Salud, ha propuesto una clasificación del estado nutricional dependiendo del IMC
+        de una persona.</p>
+
+    <img src="blog_IMC.webp" alt="imc"><br>
+
+    <div>
+        <form>
+            <h2>Calcula tu Indice de Masa Corporal</h2>
+            <div id="input-fields">
+                <label><input type="text" name="peso" id="peso" /></label><br>
+                <label><input type="text" name="altura" id="altura" /></label><br><br>
+                <input type="button" name="imc" id="Calcular" value="Calcular" />
+            </div>
+            <div id="container">
+                <ul>
+                    <ol>BAJO DE PESO: el IMC es inferior a 18.5</ol>
+                    <ol>NORMAL : el IMC es de 18.5 a 24.9</ol>
+                    <ol>SOBREPESO: el IMC es de 25 a 29.9</ol>
+                    <ol>OBESIDAD I: el IMC es de 30 a 39.9</ol>
+                    <ol>OBESIDAD II: el IMC es superior a 40</ol>
+                </ul>
+            </div>
+        </form>
+    </div>
+    <script type="text/javascript" src="script.js"></script>
+
+</body>
+
+</html>
